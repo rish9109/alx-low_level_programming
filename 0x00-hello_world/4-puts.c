@@ -1,11 +1,9 @@
-#include  <stdio.h>
-/**
- ** main - prints "Programming is like building a multilingual puzzle.
- * Return: Always 0 (success)
- */;	
+#include <stdio.h>
 
-int main(void)
+/* comments here*/
+
+int main() 
 {
-puts("\"Progiamming is like building a multilingual puzzle");	
-return (0);
+    printf("Programming is like building a multilingual puzzle\n");
+    return 0;
 }
