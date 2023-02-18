@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
-/*
+/**
  * main - Entry Point
  *
  * Description: "A c program that prints a line"
  *
- * Return 1 - successful
+ * Return: Always 1
  */
 int main(void)
 {
