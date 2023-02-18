@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* main - to generate random number*/
+
+/** main - to generate random number
+*
+* Return: Always 0
+*
+*/
 {
 	int n;
 
