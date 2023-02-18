@@ -2,7 +2,7 @@
 #include <unistd.h>
 /*
  * main - Entry Point
- * Descrition: A c program that prints a line
+ * description: A c program that prints a line
  * Return 1 - successful
  */
 int main(void)
