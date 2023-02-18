@@ -21,7 +21,7 @@ int mian(void)
 	{
 		printf("%d is zero\n");
 	}
-	else 
+	else
 	{
 		printf("%d is negative\n");
 	}
