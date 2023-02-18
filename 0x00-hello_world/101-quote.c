@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 /*
- * main- A c program that prints a line
+ * main - Entry Point
+ * Descrition - A c program that prints a line
  * Return 1 - successful
  */
 int main(void)
