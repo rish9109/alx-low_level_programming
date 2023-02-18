@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/* comments here*/
+/* 
+* main - Entry point
+* Program prints exactly "Programming is like building a multilingual puzzle
+* Return (0) - (successful)
+*/
 
 int main(void)
 {
