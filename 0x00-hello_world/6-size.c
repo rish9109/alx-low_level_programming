@@ -2,25 +2,14 @@
 
 /*
 * main - Entry point
-* Return (0) - Successful
+* Return: Always 0
 */
 int main(void)
 {
-printf("On a 32-bit platform:\n")
-printf("The size of char is %zu bytes.\n", sizeof(char));
-printf("The size of int is %zu bytes.\n", sizeof(int));
-printf("The size of long int is %zu bytes.\n", sizeof(long));
-printf("The size of long long int is %zu bytes.\n", sizeof(long long));
-printf("The size of float is %zu bytes.\n", sizeof(float));
-printf("\n");
-  
-printf("On a 64-bit platform:\n")
-printf("The size of char is %zu bytes.\n", sizeof(char));
-printf("The size of int is %zu bytes.\n", sizeof(int));
-printf("The size of long int is %zu bytes.\n", sizeof(long));
-printf("The size of long long int is %zu bytes.\n", sizeof(long long));
-printf("The size of float is %zu bytes.\n", sizeof(float));
-printf("\n");
-  
+printf("Size of char: %lu byte(s)\n", sizeof(char));
+printf("Size of int: %lu byte(s)\n", sizeof(int));
+printf("Size of long int: %lu byte(s)\n", sizeof(long));
+printf("Size of long long int: %lu byte(s)\n", sizeof(long long));
+printf("Size of float: %lu byte(s)\n", sizeof(float));
 return (0);
 }
