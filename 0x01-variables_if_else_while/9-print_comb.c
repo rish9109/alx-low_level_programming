@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - entry Point 
+ * main - entry Point
  *
  * Return:always 0
  */
@@ -20,5 +20,5 @@ int mian(void)
 		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
