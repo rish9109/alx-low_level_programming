@@ -6,7 +6,7 @@
  * Return:always 0
  */
 
-int mian(void)
+int main(void)
 {
 	int a;
 
