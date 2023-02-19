@@ -7,13 +7,13 @@
  */
 
 int mian(void)
-	{
+{
 	int a;
 
-	for (a = 0; a <10; a++)
+	for (a = 48; a < 58; a++)
 	{
-		putchar(a + '0');
-		if (a < 99)
+		putchar(a);
+		if (a != 57)
 		{
 			putchar(',');
 			putchar(' ');
@@ -21,4 +21,4 @@ int mian(void)
 	}
 	putchar('\n');
 	return(0);
-	}
+}
