@@ -2,13 +2,13 @@
 /**
  * print_times_table - Entry point
  * starting with 0.
- * @n: the value of the ties table to be printed 
+ * @n: the value of the ties table to be printed
  */
 void print_times_table(int n)
 {
 	int num, multi, prod;
 
-	if (n >= 0 && n<= 15)
+	if (n >= 0 && n <= 15)
 	{
 	for (num = 0; num <= n; num++)
 	{
