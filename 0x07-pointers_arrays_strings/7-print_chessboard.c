@@ -6,17 +6,15 @@
  * @a: This is my variable
  *
  */
-
 void print_chessboard(char (*a)[8])
 {
-	int count, index;
+	int i;
+	int j;
 
-	for (count = 0; count < 8; count++)
+	for (i = 0; i < 8; i++)
 	{
-		for (index = 0; index < 8; index++)
-		{
-			_putchar(a[count][index]);
-		}
+		for (j = 0; j < 8; j++)
+			_putchar(a[i][j]);
 		_putchar('\n');
 	}
 }
