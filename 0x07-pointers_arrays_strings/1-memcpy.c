@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _memcpy - Write a function that copies memory area.
  * The _memcpy() function copies n bytes from memory area src to memory area
@@ -14,13 +13,13 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int count;
-	char *pDst = dest;
-	char const *pSrc =  src;
+	int r = 0;
+	int i = n;
 
-	for (count = 0; count < n; count++)
+	for (; r < i; r++)
 	{
-		*pDst++ = *pSrc++;
+		dest[r] = src[r];
+		n--;
 	}
 	return (dest);
 }
