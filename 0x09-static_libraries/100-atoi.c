@@ -1,50 +1,28 @@
 #include "main.h"
-#include <limits.h>
-
 /**
- * _atoi - Convert a string to an integer
- * @s: Pointer to the string to convert
+ * _atoi - convert a string into an integer.
  *
- * Return: The integer that was converted
+ * @s: the string to use.
+ *
+ * Return: integer.
  */
 int _atoi(char *s)
 {
-	int i, start, negative;
-	unsigned int number;
+ 	int sign = 1, i = 0;
+ 	unsigned int res = 0;
 
-	start = -1;
-	negative = 0;
-	number = 0;
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-			start = i;
 
-		if (s[i] == '-' && start == -1)
-		{
-			if (negative)
-				negative = 0;
-			else
-				negative = 1;
-		}
-	}
-
-	if (start != -1)
-	{
-		for (i = 0; s[i] != '\0'; i++)
-		{
-			if (s[i] >= '0' && s[i] <= '9')
-				number = number * 10 + s[i] - '0';
-			else if (s[i - 1] >= '0' && s[i - 1] <= '9')
-				break;
-		}
-	}
-
-		return (INT_MAX);
-	else if ((number > (unsigned int) INT_MAX && negative))
-		return (INT_MIN);
-	else if (negative)
-		return ((int) -number);
-	else
-		return ((int) number);
-}
+ 	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+ 	{
+ 		if (s[i] == '-')
+ 			sign *= -1;
+ 		i++;
+ 	}
+ 	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+ 	{
+ 		res = (res * 10) + (s[i] - '0');
+ 		i++;
+ 	}
+ 	res *= sign;
+ 	return (res);
+ }
