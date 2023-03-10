@@ -1,20 +1,23 @@
 #include "main.h"
 /**
- * _isdigit - If is 0 to 9 return 1, if not return 0
+ *_memcpy - a function that copies memory area
+ *@dest: memory where is stored
+ *@src: memory where is copied
+ *@n: number of bytes
  *
- * @c: this is the entry
- *
- * Return: 0
- *
- **/
-int _isdigit(int c)
+ *Return: copied memory with n byted changed
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	if (c >= '0' && c <= '9')
+	int r = 0;
+	int i = n;
+
+
+	for (; r < i; r++)
 	{
-		return (1);
+		dest[r] = src[r];
+		n--;
 	}
-	else
-	{
-		return (0);
-	}
+	return (dest);
 }
+ 
