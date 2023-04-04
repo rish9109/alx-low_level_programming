@@ -1,7 +1,10 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef HEADER_FILE
+#define HEADER_FILE
+
 #include <stdio.h>
+#include<string.h>
 #include <stdlib.h>
+#include <stdarg.h>
 
 /**
  * struct listint_s - singly linked list
